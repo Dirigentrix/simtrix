@@ -8,6 +8,7 @@ from dataclasses import dataclass
 from typing import Any
 
 from .algebra_engine import ANGLE_DEGREES, GAMMA, RESONANCE_HZ, triad_tensor, tensor_trace
+from .induction_prover import symbolic_algebra_self_test
 
 CORE_ID = 181141
 RISK_THRESHOLD = 0.72
@@ -45,11 +46,13 @@ class SimtrixOperatorCore:
             "threshold": self.risk.threshold,
             "resonance_hz": self.risk.resonance_hz,
             "context_present": context is not None,
+            "symbolic_algebra_self_test": symbolic_algebra_self_test().passed,
         }
 
     def diagnostics(self) -> dict[str, Any]:
         tensor = triad_tensor()
-        return {"tensor_size": "7x7", "tensor_trace": tensor_trace(tensor), "angle_degrees": ANGLE_DEGREES, "gamma": GAMMA}
+        proof = symbolic_algebra_self_test()
+        return {"tensor_size": "7x7", "tensor_trace": tensor_trace(tensor), "angle_degrees": ANGLE_DEGREES, "gamma": GAMMA, "symbolic_algebra_self_test": proof.passed, "induction_steps": proof.checked_steps}
 
 
 def main() -> None:
