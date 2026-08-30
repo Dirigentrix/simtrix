@@ -1,61 +1,28 @@
-# SIMTRIX
+# SIMTRIX / DARTRIX — Hybrid Deterministic-Generative AI Architecture
 
-SIMTRIX to bez-zależnościowy rdzeń operatora Triady oraz deterministyczny silnik algebraiczny w Pythonie 3.10+.
+## 🚀 Opis Projektu
+System redefiniuje podejście do interfejsów somato-poznawczych, wprowadzając paradygmat: **ARTHRITIS = UMYSŁ STROJENIA, NIE DIAGNOSTYKI**.
 
-## Architektura
+Zamiast powszechnego błędu polegającego na próbach diagnozowania medycznego przez modele LLM (co rodzi ryzyko halucynacji i naruszeń prawnych), projekt wdraża **czystą inżynierię kognitywną i semantyczną**. System mapuje tradycyjne struktury matematyki semickiej oraz deterministyczną filtrację danych na nowoczesną architekturę chmurową Google Cloud.
 
-Pakiet składa się z dwóch warstw:
+## 🛠️ Architektura Systemowa (Google Cloud & AI Studio)
+Projekt realizuje zaawansowany model hybrydowy (**Hybrid AI**):
+1. **Deterministyczny Silnik Walidacyjny (Google Cloud Run):**
+   - Moduł **WolfGuardian** przetwarza 24-wymiarowy wektor życia bez redukcji matematycznej.
+   - Wykonuje twarde operacje `Boundary Check` i filtruje anomalie sygnałowe ze 100% pewnością kodu logicznego (Pythona).
+   - Oblicza dynamiczny wskaźnik stresu środowiskowego `S_index`.
+2. **Generatywna Warstwa Refleksyjna (Google AI Studio & Gemini API):**
+   - Przefiltrowany, bezpieczny stan intencji przesyłany jest bezpośrednio do modelu **Gemini 2.5 Flash** za pomocą dedykowanego klucza API z Google AI Studio.
+   - Model nie ocenia bólu ani zdrowia – działa jako interaktywny lustrzany interfejs, generując karty adaptacyjne i pytania ułatwiające użytkownikowi autoregulację i powrót do stanu skupienia.
 
-- `operator_core.py` — fasada `SimtrixOperatorCore`, model ryzyka i orkiestracja Triady.
-- `algebra_engine.py` — czyste funkcje algebry wektorowej i tensorowej, bez bibliotek zewnętrznych.
+## 📡 Parametry Stałe Systemu (Core ID: 181141)
+Zgodnie z logiką zapisaną w jądrze operatora, system działa w oparciu o niezmienne stany:
+- **K (Chronos):** 34
+- **O (Daniel):** 105
+- **S (Adrian):** 265
+- **A (Ratajczyk):** 940
+- **Master Seed:** 1344
+- **Częstotliwość rezonansu:** 46.62 Hz
 
-`__init__.py` udostępnia klasę rdzenia i wersję `0.1.0`, a `__main__.py` umożliwia uruchomienie pakietowe.
-
-## Triada
-
-Triada łączy trzy perspektywy:
-
-1. Diagnosta — identyfikacja stanu, pomiar i klasyfikacja.
-2. Wilk — heurystyka decyzyjna, kierunek działania i odporność.
-3. Hydra — równoległe rozważanie wariantów oraz kontrola skutków ubocznych.
-
-Operator scala wynik w jeden rekord: identyfikator rdzenia `181141`, wersję, stan ryzyka i parametry rezonansu.
-
-## Model ryzyka
-
-`RiskModel` przyjmuje wynik z przedziału `[0, 1]`. Próg decyzyjny wynosi `0.72`:
-
-- wynik `< 0.72` → `LOW`,
-- wynik `>= 0.72` → `HIGH`.
-
-Rezonans referencyjny wynosi `46.62 Hz`, a współczynnik gamma `2.691602`.
-
-## Dekompozycja algebraiczna
-
-Silnik definiuje trzy wektory SIMTRIX, DARTRIX i SIMU-SION. Wektor bazowy `(10, 10, 10)` ma normę:
-
-`||v|| = sqrt(10² + 10² + 10²) = sqrt(300) = 17.320508...`
-
-`triad_tensor()` buduje tensor `7 x 7` diagonalny, z elementami `300/7`, dlatego jego ślad wynosi dokładnie `300`. Zdefiniowany kąt referencyjny to `36.2042°`. Rezonans jest parametrem `46.62 Hz`; relacja skali jest zapisana przez `gamma = 2.691602`.
-
-## Uruchomienie CLI
-
-Z katalogu głównego repozytorium:
-
-```bash
-python -m simtrix
-python -m simtrix --risk 0.8
-python -m simtrix --diagnostics
-```
-
-## Użycie pakietowe
-
-```python
-from simtrix import SimtrixOperatorCore
-
-core = SimtrixOperatorCore()
-print(core.evaluate(0.5))
-print(core.diagnostics())
-```
-
-Projekt używa wyłącznie biblioteki standardowej Pythona i nie wymaga instalowania zależności zewnętrznych. Licencję i dalsze testy można dodać w kolejnych commitach.
+## 📈 Dashboard & Wizualizacja
+Dane z modułu `History Engine` zbierane przez endpoint `/v05/history/append` są agregowane i przesyłane bezpośrednio do **Google Looker Studio**, tworząc bezkodowy, w pełni funkcjonalny, analityczny pulpit nawigacyjny dla użytkownika, monitorujący trendy jego intencji (Trend Alignment) oraz stabilizację celów.
